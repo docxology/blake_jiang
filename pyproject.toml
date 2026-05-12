@@ -1,0 +1,84 @@
+# Blake & Jiang — Architecture of Intelligence: Rapid-Publication Response
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blake_jiang"
+version = "1.0.0"
+description = "William Blake, Professor Jiang, and the Architecture of Intelligence — a rapid-publication AI-augmented scholarly response to Game Theory #24: The AI Apocalypse (12 May 2026)"
+readme = "README.md"
+authors = [
+    {name = "Daniel Ari Friedman", email = "daniel@activeinference.institute"},
+]
+license = {text = "MIT (code) / CC-BY-4.0 (manuscript)"}
+requires-python = ">=3.10"
+keywords = [
+    "William Blake",
+    "Jiang Xueqin",
+    "Active Inference",
+    "Free Energy Principle",
+    "Markov blanket",
+    "Four Zoas",
+    "Newton's Sleep",
+    "fourfold vision",
+    "cognitive security",
+    "AI alignment",
+    "rapid publication",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "matplotlib>=3.7.0",
+    "networkx>=3.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-timeout>=2.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/docxology/blake_jiang"
+"Author Website" = "https://danielarifriedman.com"
+"Active Inference Institute" = "https://www.activeinference.institute"
+"Prior Work (Zenodo Doors)" = "https://zenodo.org/records/18600041"
+"Prior Work (Zenodo Pragmatism)" = "https://zenodo.org/records/18807971"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short --strict-markers"
+timeout = 30
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+omit = ["tests/*", "*/__init__.py", "*/test_*.py"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]

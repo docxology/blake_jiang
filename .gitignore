@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# uv
+uv.lock
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+
+# Disposable build artefacts under output/
+# (We *do* keep the final top-level PDF + any committed final figures.)
+output/data/
+output/figures/
+output/logs/
+output/pdf/
+output/web/
+output/slides/
+output/tex/
+output/reports/
+output/simulations/
+output/llm/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# LaTeX intermediate
+*.aux
+*.bbl
+*.blg
+*.toc
+*.out
+*.log
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz

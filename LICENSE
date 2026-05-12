@@ -1,0 +1,43 @@
+# Licensing
+
+This repository contains both scholarly content (the manuscript, its figures, and accompanying notes) and source code (Python modules, tests, scripts). The two are licensed separately.
+
+## Manuscript and Figures
+
+The contents of the following paths are licensed under the
+**Creative Commons Attribution 4.0 International License (CC-BY-4.0)**:
+
+- `manuscript/` (all Markdown sections, `config.yaml`, `references.bib`)
+- `blake_jiang_DAF_v1_05-12-2026.pdf` (and any other PDF deliverables)
+- `output/figures/` (programmatically generated figures)
+- `doc/` (scholarly notes)
+
+Full text: [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0) or
+<https://creativecommons.org/licenses/by/4.0/legalcode>
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+## Source Code
+
+The contents of the following paths are licensed under the **MIT License**:
+
+- `src/` (Python source modules)
+- `tests/` (Python test modules)
+- `scripts/` (thin orchestrator scripts)
+- `pyproject.toml`, `.gitignore`, and other repository configuration
+
+Full text: [LICENSE-MIT](LICENSE-MIT)
+
+## Author
+
+Daniel Ari Friedman, PhD
+President, Active Inference Institute
+ORCID: 0000-0001-6232-9096
+daniel@activeinference.institute
+
+Copyright © 2026 Daniel Ari Friedman.
