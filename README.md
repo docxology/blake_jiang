@@ -34,7 +34,7 @@ blake_jiang/
 │   └── viz/                            7 programmatic figure renderers
 ├── tests/                              85 zero-mock tests; coverage ≥ 98.5 %
 ├── scripts/                            Thin orchestrators (analyze.py, generate_figures.py)
-├── doc/                                Methodology + quotation-provenance notes
+├── docs/                                Methodology + quotation-provenance notes
 ├── output/                             Disposable build artefacts (gitignored except final deliverables)
 ├── pyproject.toml
 ├── AGENTS.md                           Repository conventions for AI agents

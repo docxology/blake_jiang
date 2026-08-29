@@ -42,7 +42,7 @@ projects/blake_jiang/
 ├── tests/                    Zero-mock test suite (>=90 % cov target)
 ├── scripts/                  analyze.py + generate_figures.py
 ├── manuscript/               9 ordered Markdown sections + config + bib
-├── doc/                      Internal scholarly notes
+├── docs/                      Internal scholarly notes
 └── output/                   Disposable working outputs
 ```
 
