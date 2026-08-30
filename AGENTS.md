@@ -41,7 +41,7 @@ projects/blake_jiang/
 │   └── viz/                  Programmatic figure engine
 ├── tests/                    Zero-mock test suite (>=90 % cov target)
 ├── scripts/                  analyze.py + generate_figures.py
-├── manuscript/               9 ordered Markdown sections + config + bib
+├── manuscript/               12 ordered Markdown sections + config + bib
 ├── docs/                      Internal scholarly notes
 └── output/                   Disposable working outputs
 ```

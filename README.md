@@ -32,7 +32,7 @@ blake_jiang/
 │   ├── fourfold.py                     Four Zoas as factorized generative model
 │   ├── manuscript.py                   Manuscript-injection builder
 │   └── viz/                            7 programmatic figure renderers
-├── tests/                              85 zero-mock tests; coverage ≥ 98.5 %
+├── tests/                              zero-mock test suite; coverage ≥ 90 % (see tests/README.md for current counts)
 ├── scripts/                            Thin orchestrators (analyze.py, generate_figures.py)
 ├── docs/                                Methodology + quotation-provenance notes
 ├── output/                             Disposable build artefacts (gitignored except final deliverables)

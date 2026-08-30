@@ -1,6 +1,6 @@
 # `tests/` — Zero-Mock Test Suite
 
-66 tests across 8 files; 99.05 % line+branch coverage of `src/`.
+Zero-mock suite across 8 files (73 test functions on disk as of 2026-08-29); coverage target ≥ 90 % of `src/`.
 
 ## What we test
 

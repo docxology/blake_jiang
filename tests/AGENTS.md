@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Zero-mock test suite for the Blake/Jiang project. Coverage target: **≥ 90 %** of `src/` lines and branches. Current coverage: **99.05 %**.
+Zero-mock test suite for the Blake/Jiang project. Coverage target: **≥ 90 %** of `src/` lines and branches. (Historic measured figure 99.05 %; not re-measured in the 2026-08-29 documentation pass.)
 
 ## Test files
 
