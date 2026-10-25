@@ -48,18 +48,18 @@ Each subdirectory carries its own `AGENTS.md` and `README.md` describing its pur
 The project is structured to integrate with the [`docxology/template`](https://github.com/docxology/template) research-project pipeline; when run inside that workspace, it executes through the template's 10-stage DAG. Run standalone with `uv`:
 
 ```bash
-# install
-uv sync --dev
+# install (pytest + coverage plugins live in the "dev" extra)
+uv sync --extra dev
 
 # render figures + manuscript-injection JSON
 uv run python scripts/analyze.py
 uv run python scripts/generate_figures.py
 
-# run the zero-mock test suite (≥ 98.5 % coverage)
+# run the zero-mock test suite (90 % coverage floor enforced)
 uv run pytest tests/ --cov=src --cov-fail-under=90
 ```
 
-The 12 PNG figures are produced under `output/figures/`; the JSON metrics under `output/data/`. Rendering the full PDF requires the [template](https://github.com/docxology/template) pipeline's pandoc/xelatex stage.
+The 14 PNG figures (7 renderers × light/dark) are produced under `output/figures/`; the JSON metrics under `output/data/`. Rendering the full PDF requires the [template](https://github.com/docxology/template) pipeline's pandoc/xelatex stage.
 
 ## Citation
 

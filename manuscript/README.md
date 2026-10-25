@@ -1,8 +1,8 @@
 # `manuscript/` — Scholarly Prose
 
-Nine ordered Markdown sections + `99_references.md` + `references.bib` + `config.yaml`. The root pipeline assembles these into the final paper.
+Eleven ordered Markdown sections + `99_references.md` + `references.bib` + `config.yaml`. The root pipeline assembles these into the final paper.
 
-## Reading order (files as of 2026-08-29):
+## Reading order (files as of 2026-10-25):
 
 1. **`00_abstract.md`** — what the paper argues, in ~500 words.
 2. **`01_introduction.md`** — three voices, three registers, why triangulation is the method.
@@ -20,10 +20,12 @@ Nine ordered Markdown sections + `99_references.md` + `references.bib` + `config
 ## Build
 
 ```bash
-# From the repo root
-./run.sh --pipeline --project blake_jiang
-# Output PDFs land in output/blake_jiang/pdf/
+# From the repository root — refresh derived data and figures
+uv run python scripts/analyze.py
+uv run python scripts/generate_figures.py
 ```
+
+The PDF itself is assembled by the `docxology/template` workspace pipeline (pandoc/xelatex), which consumes these sections together with `config.yaml` and `references.bib`. The last assembled build is checked in at the repository root as `blake_jiang_DAF_v1_05-12-2026.pdf`.
 
 ## Tone
 

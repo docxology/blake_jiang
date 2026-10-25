@@ -12,7 +12,7 @@ src/
 ├── generative_model.py  # Precision-allocation metrics (Active Inference)
 ├── fourfold.py          # Four Zoas as a factorized generative model
 ├── manuscript.py        # ManuscriptBuilder: gathers everything into one dict
-└── viz/                 # Six figure renderers (see viz/README.md)
+└── viz/                 # Seven figure renderers (see viz/README.md)
 ```
 
 ## What lives where
@@ -24,7 +24,7 @@ src/
 ## Local sanity check
 
 ```bash
-uv run pytest projects/blake_jiang/tests/ -k "quotations or convergence or generative or fourfold" -v
+uv run pytest tests/ -k "quotations or convergence or generative or fourfold" -v
 ```
 
 ## Style

@@ -1,6 +1,6 @@
 # `tests/` — Zero-Mock Test Suite
 
-Zero-mock suite across 8 files (73 test functions on disk as of 2026-08-29); coverage target ≥ 90 % of `src/`.
+Zero-mock suite across 8 files (73 test functions on disk as of 2026-10-25); coverage floor ≥ 90 % of `src/`, enforced by `--cov-fail-under=90`.
 
 ## What we test
 
@@ -15,7 +15,7 @@ Zero-mock suite across 8 files (73 test functions on disk as of 2026-08-29); cov
 ## Run it
 
 ```bash
-uv run pytest projects/blake_jiang/tests/ --cov=projects/blake_jiang/src --cov-fail-under=90
+uv run pytest tests/ --cov=src --cov-fail-under=90
 ```
 
 ## Style

@@ -48,7 +48,13 @@ projects/blake_jiang/
 
 ## Execution
 
+Standalone (this repository checked out on its own; run from the repository root):
+
 ```bash
-./secure_run.sh --project blake_jiang
-./run.sh --pipeline --project blake_jiang
+uv sync --extra dev
+uv run python scripts/analyze.py
+uv run python scripts/generate_figures.py
+uv run pytest tests/ --cov=src --cov-fail-under=90
 ```
+
+Inside the `docxology/template` workspace, where this project lives at `projects/blake_jiang/`, the same work is driven through the template's pipeline DAG. The wrappers referenced there (`./run.sh --pipeline --project blake_jiang`, `./secure_run.sh --project blake_jiang`) belong to that workspace, not to this repository.

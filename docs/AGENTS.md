@@ -10,8 +10,9 @@ Internal scholarly notes, design records, and module-level deep-dives that don't
 | --- | --- |
 | `methodology.md` | Method, scope, exclusions, epistemic stance. |
 | `quotation_provenance.md` | Source-by-source provenance for every quotation in `src/quotations.py`. |
-| `convergence_node_log.md` | Per-node design history; why each was selected; rejected alternatives. |
-| `figure_design.md` | Visual-design decisions for the six figures. |
+| `README.md` | Directory overview; defers to this file for conventions. |
+
+Add a row here when a new note lands (e.g. a per-node design history, or figure-design rationale for the seven renderers in `src/viz/`).
 
 ## Architecture Rules
 

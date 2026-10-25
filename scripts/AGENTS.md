@@ -9,13 +9,13 @@
 | File | Imports from | Writes to | What it does |
 | --- | --- | --- | --- |
 | `analyze.py` | `projects.blake_jiang.src.manuscript.ManuscriptBuilder` | `output/data/manuscript_injection.json` | Builds the manuscript-injection dictionary (12-node summary, fourfold mapping, regime metrics) and serializes it. |
-| `generate_figures.py` | `projects.blake_jiang.src.viz.*` | `output/figures/<name>_<theme>.png` | Renders all 6 figures in light + dark themes (12 PNG files total). |
+| `generate_figures.py` | `projects.blake_jiang.src.viz.*` | `output/figures/<name>_<theme>.png` | Renders all 7 figures in light + dark themes (14 PNG files total). |
 | `__init__.py` | — | — | Package marker (empty). |
 
 ## Architecture Rules
 
 1. **Logic-free.** Scripts coordinate; modules implement. Anything resembling analysis must move into `src/`.
-2. **Deterministic output paths.** Both scripts accept an optional `output_dir` parameter so tests can redirect to `tmp_path`; if omitted, the script writes under `projects/blake_jiang/output/`.
+2. **Deterministic output paths.** Both scripts accept an optional `output_dir` parameter so tests can redirect to `tmp_path`; if omitted, the script writes under `<repo root>/output/`.
 3. **Headless matplotlib.** `generate_figures.py` sets `MPLBACKEND=Agg` before importing `matplotlib`.
 4. **Print discoverable paths.** Each script prints absolute paths of artifacts produced to stdout so the root pipeline's manifest collector can pick them up.
 5. **Idempotent.** Running a script twice with the same output dir must yield byte-identical (data) or visually-identical (figures) results.

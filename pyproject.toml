@@ -1,7 +1,8 @@
 # Blake & Jiang — Architecture of Intelligence: Rapid-Publication Response
 
 [build-system]
-requires = ["setuptools>=61.0"]
+# setuptools >= 77 for PEP 639 SPDX license metadata.
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -12,7 +13,9 @@ readme = "README.md"
 authors = [
     {name = "Daniel Ari Friedman", email = "daniel@activeinference.institute"},
 ]
-license = {text = "MIT (code) / CC-BY-4.0 (manuscript)"}
+# Code is MIT; the manuscript and figures are CC-BY-4.0 (see README / LICENSE).
+license = "MIT"
+license-files = ["LICENSE*"]
 requires-python = ">=3.10"
 keywords = [
     "William Blake",
@@ -30,27 +33,27 @@ keywords = [
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 dependencies = [
-    "matplotlib>=3.7.0",
-    "networkx>=3.0",
-    "numpy>=1.24.0",
-    "scipy>=1.10.0",
-    "pyyaml>=6.0",
+    "matplotlib>=3.9.0",
+    "networkx>=3.3",
+    "numpy>=1.26.0",
+    "scipy>=1.13.0",
+    "pyyaml>=6.0.1",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=7.4.0",
-    "pytest-cov>=4.1.0",
-    "pytest-timeout>=2.1.0",
+    "pytest>=8.3.0",
+    "pytest-cov>=6.0.0",
+    "pytest-timeout>=2.3.0",
 ]
 
 [project.urls]

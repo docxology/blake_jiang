@@ -15,6 +15,7 @@ Programmatic figure engine. Every published figure in the Blake/Jiang manuscript
 | `precision_dynamics.py` | `render_precision_dynamics` | Three-panel bar chart: Newton's-Sleep metric, fourfold-balance entropy, cleansed-doors score across four canonical regimes. |
 | `timeline.py` | `render_timeline` | Multi-century chronology — Blake (1789-1820) → Pragmatism (1878-1929) → Active Inference (2005-2022) → Jiang (2024) → Friedman (2026). |
 | `markov_blanket.py` | `render_markov_blanket` | Concentric Markov-blanket diagram with Blake's "doors of perception" quotation. |
+| `precision_phase.py` | `render_precision_phase` | Belief trajectories in (mean, precision) phase space under three prior-precision regimes — Newton's Sleep, balanced twofold, evidence-dominant cleansed doors. |
 
 ## Architecture Rules
 

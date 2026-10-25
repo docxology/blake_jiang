@@ -24,8 +24,6 @@ Sections are processed in lexicographic order; the leading two-digit prefix is t
 | `10_glossary.md` | Glossary of cross-vocabulary terms. | — |
 | `99_references.md` | Pointer to references.bib. | — |
 | `references.bib` | All citations in BibTeX. | — |
-| `preamble.md` | Front-matter prose prepended at assembly. | — |
-| `legal_claim_ledger.yaml` | Rights/claims ledger for quoted material. | — |
 
 ## Architecture Rules
 
