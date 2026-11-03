@@ -30,7 +30,7 @@ All tests in `tests/test_*.py` operate without mocking. Mathematical models, man
 ## Directory Structure
 
 ```
-projects/blake_jiang/
+blake_jiang/
 ├── src/
 │   ├── __init__.py
 │   ├── convergence.py        Twelve-node convergence model
