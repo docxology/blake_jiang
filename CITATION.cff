@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "blake_jiang"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+repository-code: "https://github.com/docxology/blake_jiang"
+abstract: "Essay pipeline triangulating Jiang Xueqin's 2026 AI lecture, William Blake's Single Vision, and Friston's Active Inference as one failure mode: pathological prior dominance. Generates a full-length manuscript with its equations and light/dark figures from Python (uv, pytest, pandoc/xelatex)."
