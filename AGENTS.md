@@ -1,4 +1,4 @@
-# AGENTS.md — `projects/blake_jiang/`
+# AGENTS.md — `blake_jiang-private`
 
 ## Directory Overview
 
@@ -6,10 +6,10 @@ This directory houses the `blake_jiang` research project: a multi-section schola
 
 ## Architecture Rules
 
-### 1. Two-Layer Architecture
+### 1. Layering
 
-- **Generic infrastructure** lives only in `/infrastructure/`; this project never reimplements logging, rendering, validation, or LLM logic.
-- **Domain logic** lives in `projects/blake_jiang/src/`:
+- **No internal infrastructure layer.** The package imports only the standard library plus `matplotlib`, `networkx`, `numpy`, `scipy`, and `pyyaml`; logging uses the standard-library `logging` module.
+- **Domain logic** lives in `src/`:
   - `convergence.py` — the twelve-node convergence analysis between Jiang and Friedman/Blake.
   - `quotations.py` — authoritative quotation registry with timestamps and sources.
   - `generative_model.py` — Active-Inference-style metrics: prior dominance, precision allocation, fourfold balance.
@@ -21,7 +21,7 @@ This directory houses the `blake_jiang` research project: a multi-section schola
 
 ### 2. Thin Orchestrators
 
-`scripts/analyze.py` and `scripts/generate_figures.py` MUST NOT contain analytical logic. They import from `projects.blake_jiang.src.*` and write serialized outputs to `output/`.
+`scripts/analyze.py` and `scripts/generate_figures.py` MUST NOT contain analytical logic. They import from `src.*` and write serialized outputs to `output/`.
 
 ### 3. Zero-Mock Testing
 
@@ -43,7 +43,8 @@ blake_jiang/
 ├── scripts/                  analyze.py + generate_figures.py
 ├── manuscript/               12 ordered Markdown sections + config + bib
 ├── docs/                      Internal scholarly notes
-└── output/                   Disposable working outputs
+├── output/                   Disposable working outputs (created on demand)
+└── blake_jiang_DAF_v1_05-12-2026.pdf   Rendered manuscript PDF (v1, 2026-05-12)
 ```
 
 ## Execution
