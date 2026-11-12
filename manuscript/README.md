@@ -19,6 +19,8 @@ Eleven ordered Markdown sections + `99_references.md` + `references.bib` + `conf
 
 ## Build
 
+The section files are hand-authored prose; the assembled paper is checked in as `../blake_jiang_DAF_v1_05-12-2026.pdf`. The figures the sections reference are regenerated from the repository root with:
+
 ```bash
 # From the repository root — refresh derived data and figures
 uv run python scripts/analyze.py
