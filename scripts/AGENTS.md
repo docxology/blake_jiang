@@ -1,4 +1,4 @@
-# AGENTS.md — `projects/blake_jiang/scripts/`
+# AGENTS.md — `scripts/`
 
 ## Purpose
 
@@ -17,11 +17,12 @@
 1. **Logic-free.** Scripts coordinate; modules implement. Anything resembling analysis must move into `src/`.
 2. **Deterministic output paths.** Both scripts accept an optional `output_dir` parameter so tests can redirect to `tmp_path`; if omitted, the script writes under `<repo root>/output/`.
 3. **Headless matplotlib.** `generate_figures.py` sets `MPLBACKEND=Agg` before importing `matplotlib`.
-4. **Print discoverable paths.** Each script prints absolute paths of artifacts produced to stdout so the root pipeline's manifest collector can pick them up.
-5. **Idempotent.** Running a script twice with the same output dir must yield byte-identical (data) or visually-identical (figures) results.
+4. **Print discoverable paths.** Each script prints absolute paths of artifacts produced to stdout.
+5. **Invoke as modules.** Run from the repository root as `uv run python -m scripts.<name>` so that the `src.*` imports resolve.
+6. **Idempotent.** Running a script twice with the same output dir must yield byte-identical (data) or visually-identical (figures) results.
 
 ## Don't
 
 - Don't add a script that wraps a single call from `src/` — call the module directly.
-- Don't read data from `output/` to drive another stage — the pipeline DAG, not the scripts, owns inter-stage data flow.
-- Don't catch exceptions broadly — let failures propagate so the pipeline records them.
+- Don't read data from `output/` to drive another stage — the scripts, not the outputs, own the flow between stages.
+- Don't catch exceptions broadly — let failures propagate so callers see them.
