@@ -1,4 +1,4 @@
-# AGENTS.md — `projects/blake_jiang/manuscript/`
+# AGENTS.md — `manuscript/`
 
 ## Purpose
 
