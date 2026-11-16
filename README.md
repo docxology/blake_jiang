@@ -4,6 +4,8 @@
 
 > ⚠️ **A note on form.** This paper is an experiment in rapid AI-augmented scholarly publication with society-in-the-loop. It was drafted on 12 May 2026 in response to a YouTube lecture published the same day. The drafting process used contemporary AI assistance for transcript research, structural mapping, formal derivation, and figure rendering, while editorial judgment, quotation provenance, scholarly framing, and the final synthetic argument remained with the author. The methodology is not standard peer-reviewed scholarship; it is an attempt to see what becomes available when publication latency is collapsed from months to hours. Readers are invited to read in that spirit: a working draft, posted in the open, inviting correction.
 
+![Blake, Jiang, and the Architecture of Intelligence pipeline: triangulating Jiang's lecture, Blake's Single Vision, and Active Inference precision misallocation into a 12-section manuscript](docs/assets/overview.svg)
+
 ## The Paper
 
 The combined manuscript PDF is checked in at the repository root:
