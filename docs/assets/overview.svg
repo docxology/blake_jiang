@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="465" viewBox="0 0 960 465" role="img" aria-labelledby="t d">
+<title id="t">Blake, Jiang, and the Architecture of Intelligence Pipeline</title>
+<desc id="d">Triangulating Jiang Xueqin&#x27;s lecture, William Blake&#x27;s Single Vision, and Active Inference into a 12-section manuscript.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 1.5L9 5L0 8.5z" fill="#64748b"/></marker></defs>
+<rect x="0" y="0" width="960" height="465" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="20" y="18" width="920" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-card="1"/>
+<rect x="20" y="18" width="6" height="64" rx="3" fill="#7c3aed"/>
+<text x="38" y="45" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#0f172a">Blake, Jiang &amp; the Architecture of Intelligence</text>
+<text x="38" y="67" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Functional analogy across three vocabularies diagnosing pathological prior dominance</text>
+<rect x="770" y="27" width="156" height="24" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="848.0" y="43" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11.5" font-weight="600" fill="#4c1d95">12-Node Synthesis</text>
+<text x="24" y="104" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#5b21b6">THREE TRIANGULATED VOCABULARIES (SHARED ARCHITECTURAL FAILURE MODE)</text>
+<rect x="20" y="114" width="292" height="110" rx="9" fill="#fffbeb" stroke="#d97706" stroke-width="1.5" data-card="1"/>
+<rect x="20" y="114" width="292" height="5" rx="2.5" fill="#d97706"/>
+<rect x="32" y="124" width="67" height="17" rx="8.5" fill="#ffffff" stroke="#d97706" stroke-width="0.9"/>
+<text x="65.5" y="136" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#92400e">POLEMIC</text>
+<text x="32" y="157" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700" fill="#92400e">Jiang Xueqin (2026 Lecture)</text>
+<text x="32" y="175" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Game Theory #24: AI Apocalypse</text>
+<text x="32" y="193" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Closed-loop bureaucratic &amp;</text>
+<text x="32" y="211" font-family="system-ui,sans-serif" font-size="12" fill="#334155">algorithmic self-confirmation</text>
+<rect x="334" y="114" width="292" height="110" rx="9" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5" data-card="1"/>
+<rect x="334" y="114" width="292" height="5" rx="2.5" fill="#e11d48"/>
+<rect x="346" y="124" width="67" height="17" rx="8.5" fill="#ffffff" stroke="#e11d48" stroke-width="0.9"/>
+<text x="379.5" y="136" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#9f1239">POETICS</text>
+<text x="346" y="157" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700" fill="#9f1239">William Blake (1790s Poetics)</text>
+<text x="346" y="175" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Single Vision &amp; Newton&#x27;s Sleep</text>
+<text x="346" y="193" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Urizenic closure vs Four Zoas</text>
+<text x="346" y="211" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Fourfold perceptual balance</text>
+<rect x="648" y="114" width="292" height="110" rx="9" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5" data-card="1"/>
+<rect x="648" y="114" width="292" height="5" rx="2.5" fill="#2563eb"/>
+<rect x="660" y="124" width="82" height="17" rx="8.5" fill="#ffffff" stroke="#2563eb" stroke-width="0.9"/>
+<text x="701.0" y="136" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#1e40af">FORMALISM</text>
+<text x="660" y="157" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700" fill="#1e40af">Active Inference (Friston)</text>
+<text x="660" y="175" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Variational free energy F</text>
+<text x="660" y="193" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Precision misallocation:</text>
+<text x="660" y="211" font-family="system-ui,sans-serif" font-size="12" fill="#334155">top-down prior &gt;&gt; sensory error</text>
+<path d="M 166 224 L 166 248 L 310 248 L 310 262" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr)"/>
+<path d="M 480 224 L 480 262" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr)"/>
+<path d="M 794 224 L 794 248 L 650 248 L 650 262" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="24" y="256" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1e293b">EXECUTABLE PYTHON PIPELINE (src/ -&gt; scripts/ -&gt; manuscript/)</text>
+<rect x="20" y="266" width="292" height="132" rx="9" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5" data-card="1"/>
+<rect x="20" y="266" width="292" height="5" rx="2.5" fill="#0d9488"/>
+<text x="32" y="291" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700" fill="#115e59">Domain Core (src/)</text>
+<rect x="242" y="276" width="60" height="18" rx="9" fill="#ffffff" stroke="#0d9488" stroke-width="0.9"/>
+<text x="272.0" y="288.5" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#115e59">MODELS</text>
+<text x="32" y="312" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">quotations.py · provenance</text>
+<text x="32" y="330" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">convergence.py · 12-node map</text>
+<text x="32" y="348" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">generative_model.py · 7 eqns</text>
+<text x="32" y="366" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">fourfold.py · Four Zoas model</text>
+<line x1="312" y1="332" x2="332" y2="332" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="334" y="266" width="292" height="132" rx="9" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5" data-card="1"/>
+<rect x="334" y="266" width="292" height="5" rx="2.5" fill="#7c3aed"/>
+<text x="346" y="291" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700" fill="#5b21b6">Programmatic Rendering</text>
+<rect x="556" y="276" width="60" height="18" rx="9" fill="#ffffff" stroke="#7c3aed" stroke-width="0.9"/>
+<text x="586.0" y="288.5" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#5b21b6">RENDER</text>
+<text x="346" y="312" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">src/viz/ · 7 figure builders</text>
+<text x="346" y="330" font-family="system-ui,sans-serif" font-size="12" fill="#334155">14 figures (light + dark pairs)</text>
+<text x="346" y="348" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">manuscript.py · JSON hydration</text>
+<text x="346" y="366" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">scripts/analyze.py &amp; viz CLI</text>
+<line x1="626" y1="332" x2="646" y2="332" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="648" y="266" width="292" height="132" rx="9" fill="#f1f5f9" stroke="#475569" stroke-width="1.5" data-card="1"/>
+<rect x="648" y="266" width="292" height="5" rx="2.5" fill="#475569"/>
+<rect x="660" y="276" width="60" height="17" rx="8.5" fill="#ffffff" stroke="#475569" stroke-width="0.9"/>
+<text x="690.0" y="288" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#1e293b">OUTPUT</text>
+<text x="660" y="309" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700" fill="#1e293b">Checked-In Deliverables</text>
+<text x="660" y="327" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">manuscript/ · 12 MD sections</text>
+<text x="660" y="345" font-family="system-ui,sans-serif" font-size="12" fill="#334155">Cooperation off-ramp &amp; glossary</text>
+<text x="660" y="363" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">blake_jiang_DAF_v1_...pdf</text>
+<text x="660" y="381" font-family="ui-monospace,monospace" font-size="11.5" fill="#1e293b">Zero-mock pytest &gt;= 90% cov</text>
+<rect x="20" y="414" width="920" height="36" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1" data-card="1"/>
+<text x="34" y="436.5" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#334155">Epistemic Note: Functional analogy across distinct traditions; working draft open to critique.</text>
+<text x="926" y="436.5" text-anchor="end" font-family="ui-monospace,monospace" font-size="11.5" fill="#475569">uv + pytest + xelatex</text>
+</svg>
