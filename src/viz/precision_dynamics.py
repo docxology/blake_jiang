@@ -7,13 +7,13 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
-from projects.blake_jiang.src.generative_model import (
+from ..generative_model import (
     canonical_regimes,
     cleansed_doors_score,
     fourfold_balance,
     newtons_sleep_metric,
 )
-from projects.blake_jiang.src.viz.core import COLORS, MIN_FONT, apply_style, save_and_close
+from .core import COLORS, MIN_FONT, apply_style, save_and_close
 
 
 _REGIME_DISPLAY = [

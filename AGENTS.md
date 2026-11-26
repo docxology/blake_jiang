@@ -41,8 +41,8 @@ blake_jiang/
 │   └── viz/                  Programmatic figure engine
 ├── tests/                    Zero-mock test suite (>=90 % cov target)
 ├── scripts/                  analyze.py + generate_figures.py
-├── manuscript/               12 ordered Markdown sections + config + bib
-├── docs/                      Internal scholarly notes
+├── docs/                      Maintained guides and scholarly notes
+│   └── manuscript/            12 ordered Markdown sections + config + bib
 ├── output/                   Disposable working outputs (created on demand)
 └── blake_jiang_DAF_v1_05-12-2026.pdf   Rendered manuscript PDF (v1, 2026-05-12)
 ```
@@ -53,9 +53,10 @@ Standalone (this repository checked out on its own; run from the repository root
 
 ```bash
 uv sync --extra dev
-uv run python scripts/analyze.py
-uv run python scripts/generate_figures.py
+uv run python -m scripts.analyze
+uv run python -m scripts.generate_figures
 uv run pytest tests/ --cov=src --cov-fail-under=90
 ```
 
-Inside the `docxology/template` workspace, where this project lives at `projects/blake_jiang/`, the same work is driven through the template's pipeline DAG. The wrappers referenced there (`./run.sh --pipeline --project blake_jiang`, `./secure_run.sh --project blake_jiang`) belong to that workspace, not to this repository.
+Use the [development guide](docs/development.md) to render the canonical
+manuscript with the pinned external Template checkout.

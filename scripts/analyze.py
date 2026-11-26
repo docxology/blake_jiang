@@ -1,17 +1,25 @@
 """Thin orchestrator: emit manuscript injection JSON for blake_jiang.
 
 Computes convergence, fourfold, and generative-model figures via the domain
-modules in ``projects.blake_jiang.src`` and serializes the result to
+modules in ``src`` and serializes the result to
 ``output/data/manuscript_injection.json``.
 """
 
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
+if not __package__:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from infrastructure.core.logging.utils import get_logger
-from projects.blake_jiang.src.manuscript import ManuscriptBuilder
+
+if __package__ and "." in __package__:
+    from ..src.manuscript import ManuscriptBuilder
+else:
+    from src.manuscript import ManuscriptBuilder
 
 logger = get_logger("blake_jiang.analyze")
 

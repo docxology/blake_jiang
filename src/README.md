@@ -1,6 +1,6 @@
 # `src/` — Domain Logic for the Blake/Jiang Study
 
-This package is the **only place** where project-specific computation lives. Scripts in `../scripts/` import from here; tests in `../tests/` exercise these modules; manuscript figures in `../manuscript/` are templated from data produced here.
+This package is the **only place** where project-specific computation lives. Scripts in `../scripts/` import from here; tests in `../tests/` exercise these modules; the [manuscript](../docs/manuscript/README.md) references figures generated here.
 
 ## Quick orientation
 

@@ -7,7 +7,7 @@ from pathlib import Path
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 
-from projects.blake_jiang.src.viz.core import COLORS, MIN_FONT, apply_style, save_and_close
+from .core import COLORS, MIN_FONT, apply_style, save_and_close
 
 
 def render_timeline(output_path: Path, dark: bool = False) -> None:

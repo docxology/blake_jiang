@@ -10,9 +10,9 @@ from typing import Any
 
 from infrastructure.core.logging.utils import get_logger
 
-from projects.blake_jiang.src.convergence import default_convergence_model
-from projects.blake_jiang.src.fourfold import fourfold_to_active_inference_table
-from projects.blake_jiang.src.generative_model import (
+from .convergence import default_convergence_model
+from .fourfold import fourfold_to_active_inference_table
+from .generative_model import (
     canonical_regimes,
     cleansed_doors_score,
     newtons_sleep_metric,
@@ -42,7 +42,7 @@ class ManuscriptBuilder:
         payload: dict[str, Any] = {
             "node_count": len(self.nodes),
             "quotation_count": self.registry.count(),
-            "speakers": list(set(q.speaker for q in self.registry.entries)),
+            "speakers": sorted({q.speaker for q in self.registry.entries}),
             "theme_count": len(self.registry.themes()),
             "node_names": [n.name for n in self.nodes],
             "fourfold_rows": fourfold_to_active_inference_table(),

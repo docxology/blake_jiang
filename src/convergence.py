@@ -11,7 +11,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from infrastructure.core.logging.utils import get_logger
-from projects.blake_jiang.src.quotations import (
+from .quotations import (
     QuotationRegistry,
     build_registry,
 )

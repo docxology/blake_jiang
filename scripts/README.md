@@ -7,7 +7,7 @@ Two scripts; each is a logic-free coordinator that calls `src/` modules and writ
 Builds the manuscript-injection JSON.
 
 ```bash
-uv run python scripts/analyze.py
+uv run python -m scripts.analyze
 # → output/data/manuscript_injection.json
 ```
 
@@ -16,7 +16,7 @@ uv run python scripts/analyze.py
 Renders all seven figures in light + dark themes (14 PNGs).
 
 ```bash
-uv run python scripts/generate_figures.py
+uv run python -m scripts.generate_figures
 # → output/figures/<name>_{light,dark}.png
 ```
 

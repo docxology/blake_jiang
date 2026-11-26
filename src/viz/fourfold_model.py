@@ -7,8 +7,8 @@ from pathlib import Path
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 
-from projects.blake_jiang.src.fourfold import four_zoas
-from projects.blake_jiang.src.viz.core import COLORS, MIN_FONT, apply_style, save_and_close
+from ..fourfold import four_zoas
+from .core import COLORS, MIN_FONT, apply_style, save_and_close
 
 
 _POSITIONS = {

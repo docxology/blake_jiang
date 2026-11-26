@@ -31,18 +31,8 @@ htmlcov/
 coverage.xml
 .tox/
 
-# Disposable build artefacts under output/
-# (We *do* keep the final top-level PDF + any committed final figures.)
-output/data/
-output/figures/
-output/logs/
-output/pdf/
-output/web/
-output/slides/
-output/tex/
-output/reports/
-output/simulations/
-output/llm/
+# Disposable working outputs. Historical files already tracked stay in Git.
+output/
 
 # OS
 .DS_Store

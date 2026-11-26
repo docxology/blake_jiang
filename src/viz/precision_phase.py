@@ -15,11 +15,11 @@ import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import numpy as np
 
-from projects.blake_jiang.src.generative_model import (
+from ..generative_model import (
     GaussianBelief,
     simulate_belief_trajectory,
 )
-from projects.blake_jiang.src.viz.core import COLORS, MIN_FONT, apply_style, save_and_close
+from .core import COLORS, MIN_FONT, apply_style, save_and_close
 
 
 def render_precision_phase(output_path: Path, dark: bool = False) -> None:

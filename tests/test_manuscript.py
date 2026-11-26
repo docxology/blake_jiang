@@ -31,7 +31,7 @@ def test_builder_node_count_is_twelve() -> None:
 
 def test_builder_speakers_are_three() -> None:
     data = ManuscriptBuilder().generate_injection_data()
-    assert set(data["speakers"]) == {"Jiang", "Blake", "Friedman"}
+    assert data["speakers"] == ["Blake", "Friedman", "Jiang"]
 
 
 def test_builder_metrics_are_ordered_by_health() -> None:

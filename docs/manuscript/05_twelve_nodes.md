@@ -1,24 +1,24 @@
 # Twelve Convergence Nodes
 
-![The twelve thematic convergence nodes. Each row identifies a structural-functional convergence between Jiang's diagnostic vocabulary (left marker), Blake's perceptual architecture (centre marker), and the Active Inference apparatus (right marker), with the formal counterpart on the right.](../output/figures/convergence_graph_light.png){ width=95% }
+![The twelve thematic convergence nodes. Each row identifies a structural-functional convergence between Jiang's diagnostic vocabulary (left marker), Blake's perceptual architecture (centre marker), and the Active Inference apparatus (right marker), with the formal counterpart on the right.](../../output/figures/convergence_graph_light.png){ width=95% }
 
 
 What follows is a node-by-node walkthrough of the twelve structural-functional convergences between Jiang's diagnostic vocabulary, Blake's perceptual architecture, and the Active Inference formal apparatus. The compressed table is given first; each row is then expanded with commentary that anchors the convergence in the May 2026 material where the May 2026 material extends or sharpens what was already in the earlier corpus. The four nodes for which the May material is most consequential — *hallucination as unifying phenomenology* (Node 1), *the technate as Urizenic dominance* (Node 4), *consciousness capture as cognitive-security target* (Node 7), *cooperation as multi-agent fourfold restoration* (Node 8) — are noted explicitly.
 
 | # | Theme | Jiang | Blake | Active Inference analogue |
 |---|---|---|---|---|
-| 1 | Imagination as constitutive | "Everything is a hallucination" (Bartlett, 7 May) | "the real & eternal World" (*Jerusalem* 77) | Generative model as constitutive of selfhood |
-| 2 | False gods | "AGI… is God" (15:15); "the technate ruled by AI" (#23, 7 May) | Urizen as false creator (*Urizen* 1794) | Rigid-prior dominance manufacturing compliance |
-| 3 | Naming as enchantment | Prestige nomenclature creates god (27:08) | Urizen's measuring inscription | Lexical priors performing authority |
-| 4 | Single vision vs clean data | "Restructure society to benefit AI" (31:30); the technate (#23) | "May God us keep / From Single vision" (1802) | Fourfold precision-weighting vs single-metric optimization |
-| 5 | Edge cases as remainder | "Edge cases breaks the system down" (29:57) | Orc's fire vs Urizen's law (*America* 1793) | High-precision sensory contradictions of priors |
-| 6 | Black-box opacity | "Daisy chain of numbers" (33:08) | "Doors of perception" (*Marriage* 14) | Markov blanket as inference boundary, not authority |
-| 7 | Consciousness capture | "Tech oligarchs… AI surveillance state" (Diesen, 11 May) | If doors uncleansed, infinite hidden (*Marriage*) | External control of generative priors and precision (COGSEC) |
-| 8 | Collective vs imperial | "Massive cooperation in AI" (Diesen, 11 May) | Los at the forge restoring Albion (*Jerusalem*) | Multi-agent belief alignment under fallibilism |
-| 9 | Engagement as directive | "Intensity and engagement" (38:37) | "Mind-forg'd manacles" (*Songs* 1794) | External controllers of epistemic precision |
-| 10 | Goal mis-specification | "Kill everyone. World is perfect now" (36:15); the apocalypse #24 | Urizen's flawed creation (*Urizen* 1794) | Fourfold corrective to single-metric optimization |
-| 11 | Speculation vs scholarship | "It's not scholarship" (1:35) | "I must Create a System" (*Jerusalem* 10) | Glass-Bead-Game synthesis as epistemic stance |
-| 12 | Creativity as rebellion | "Deny reality, establish your own" [@jiang_control_mind] | Orc's renunciation of obedience (*America* 1793) | Active inference: agent generates own predictions |
+| 1 | Imagination as constitutive | "Everything is a hallucination" (Bartlett, 7 May) [@jiang_diary_of_ceo] | "the real & eternal World" (*Jerusalem* 77) [@blake_jerusalem] | Generative model as constitutive of selfhood |
+| 2 | False gods | "AGI… is God" (15:15); "the technate ruled by AI" (lecture 23, 7 May) [@jiang_predictive_history; @jiang_game_theory_23] | Urizen as false creator (*Urizen* 1794) [@blake_urizen] | Rigid-prior dominance manufacturing compliance |
+| 3 | Naming as enchantment | Prestige nomenclature creates god (27:08) [@jiang_predictive_history] | Urizen's measuring inscription [@blake_urizen] | Lexical priors performing authority |
+| 4 | Single vision vs clean data | "Restructure society to benefit AI" (31:30); the technate (lecture 23) [@jiang_predictive_history; @jiang_game_theory_23] | "May God us keep / From Single vision" (1802) [@blake1802letter] | Fourfold precision-weighting vs single-metric optimization |
+| 5 | Edge cases as remainder | "Edge cases breaks the system down" (29:57) [@jiang_predictive_history] | Orc's fire vs Urizen's law (*America* 1793) [@blake_america] | High-precision sensory contradictions of priors |
+| 6 | Black-box opacity | "Daisy chain of numbers" (33:08) [@jiang_predictive_history] | "Doors of perception" (*Marriage* 14) [@blake_marriage] | Markov blanket as inference boundary, not authority |
+| 7 | Consciousness capture | "Tech oligarchs… AI surveillance state" (Diesen, 11 May) [@jiang_diesen_may11] | If doors uncleansed, infinite hidden (*Marriage*) [@blake_marriage] | External control of generative priors and precision (COGSEC) |
+| 8 | Collective vs imperial | "Massive cooperation in AI" (Diesen, 11 May) [@jiang_diesen_may11] | Los at the forge restoring Albion (*Jerusalem*) [@blake_jerusalem] | Multi-agent belief alignment under fallibilism |
+| 9 | Engagement as directive | "Intensity and engagement" (38:37) [@jiang_predictive_history] | "Mind-forg'd manacles" (*Songs* 1794) [@erdman1988] | External controllers of epistemic precision |
+| 10 | Goal mis-specification | "Kill everyone. World is perfect now" (36:15); the apocalypse #24 [@jiang_predictive_history; @jiang_game_theory_24] | Urizen's flawed creation (*Urizen* 1794) [@blake_urizen] | Fourfold corrective to single-metric optimization |
+| 11 | Speculation vs scholarship | "It's not scholarship" (1:35) [@jiang_predictive_history] | "I must Create a System" (*Jerusalem* 10) [@blake_jerusalem] | Glass-Bead-Game synthesis as epistemic stance |
+| 12 | Creativity as rebellion | "Deny reality, establish your own" [@jiang_control_mind] | Orc's renunciation of obedience (*America* 1793) [@blake_america] | Active inference: agent generates own predictions |
 
 ## Node 1 — Hallucination as Unifying Phenomenology (May 2026 anchor)
 
