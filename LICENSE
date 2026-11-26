@@ -7,7 +7,7 @@ This repository contains both scholarly content (the manuscript, its figures, an
 The contents of the following paths are licensed under the
 **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**:
 
-- `manuscript/` (all Markdown sections, `config.yaml`, `references.bib`)
+- `docs/manuscript/` (all Markdown sections, `config.yaml`, `references.bib`)
 - `blake_jiang_DAF_v1_05-12-2026.pdf` (and any other PDF deliverables)
 - `output/figures/` (programmatically generated figures)
 - `doc/` (scholarly notes)

@@ -8,9 +8,9 @@
 
 ## The Paper
 
-The combined manuscript PDF is checked in at the repository root:
-
-- 📕 **[`blake_jiang_DAF_v1_05-12-2026.pdf`](blake_jiang_DAF_v1_05-12-2026.pdf)** — ~17,000-word essay with 7 numbered equations, 14 figures (light + dark), 12-node convergence analysis, mathematical formalism for Newton's Sleep as precision misallocation, a multi-agent cooperation-off-ramp chapter, and a glossary of cross-vocabulary terms.
+Read the [canonical manuscript source](docs/manuscript/README.md) or the
+[version 1 PDF from May 12, 2026](blake_jiang_DAF_v1_05-12-2026.pdf). The
+historical PDF remains available as originally rendered.
 
 The author's earlier related work (cited throughout):
 
@@ -21,47 +21,23 @@ The author's earlier related work (cited throughout):
 
 Three independent vocabularies — Jiang's polemical lecture form, Blake's mythopoetic visionary apparatus, and the mathematical synthesis developed in the author's earlier Zenodo papers — appear, on the reading offered here, to pick out the same architectural failure mode. That failure mode is what Blake calls *Single Vision* and what cognitive science sometimes describes as *pathological prior dominance*: a perceiving system whose top-down expectations have come to outweigh incoming sensory evidence, so that the model becomes a closed loop confirming itself regardless of what actually happens. Naming this pattern across three vocabularies — Romantic poetics, contemporary public-intellectual polemic, and variational cognitive science — is what the paper attempts, with explicit acknowledgment that the mapping is a *functional analogy across incompatible metaphysics*, not a translation. The Free Energy Principle is itself contested; Jiang's lecture corpus is a speculative source, not a scholarly one. The reading is offered as a working draft, not a finished argument.
 
-## Repository Layout
+## Documentation and local checks
 
-```
-blake_jiang/
-├── blake_jiang_DAF_v1_05-12-2026.pdf   ← THE PAPER
-├── manuscript/                         12 Markdown sections + config.yaml + references.bib
-├── src/                                Domain modules
-│   ├── convergence.py                  Twelve-node convergence model
-│   ├── quotations.py                   Jiang / Blake / earlier-work quotation registry
-│   ├── generative_model.py             Active-Inference precision dynamics + variational math
-│   ├── fourfold.py                     Four Zoas as factorized generative model
-│   ├── manuscript.py                   Manuscript-injection builder
-│   └── viz/                            7 programmatic figure renderers
-├── tests/                              zero-mock test suite; coverage ≥ 90 % (see tests/README.md for current counts)
-├── scripts/                            Thin orchestrators (analyze.py, generate_figures.py)
-├── docs/                                Methodology + quotation-provenance notes
-├── output/                             Disposable build artefacts (gitignored except final deliverables)
-├── pyproject.toml
-├── AGENTS.md                           Repository conventions for AI agents
-└── README.md
-```
+Start at the [documentation index](docs/README.md) for the scholarly method,
+quotation provenance, and [development and rendering instructions](docs/development.md).
 
-Each subdirectory carries its own `AGENTS.md` and `README.md` describing its purpose, conventions, and contribution surface.
-
-## Running Locally
-
-The project is structured to integrate with the [`docxology/template`](https://github.com/docxology/template) research-project pipeline; when run inside that workspace, it executes through the template's 10-stage DAG. Run standalone with `uv`:
+From the repository root with [uv](https://docs.astral.sh/uv/) installed:
 
 ```bash
-# install (pytest + coverage plugins live in the "dev" extra)
 uv sync --extra dev
-
-# render figures + manuscript-injection JSON
-uv run python scripts/analyze.py
-uv run python scripts/generate_figures.py
-
-# run the zero-mock test suite (90 % coverage floor enforced)
+uv run python -m scripts.analyze
+uv run python -m scripts.generate_figures
 uv run pytest tests/ --cov=src --cov-fail-under=90
 ```
 
-The 14 PNG figures (7 renderers × light/dark) are produced under `output/figures/`; the JSON metrics under `output/data/`. Rendering the full PDF requires the [template](https://github.com/docxology/template) pipeline's pandoc/xelatex stage.
+The native commands produce a JSON summary in `output/data/` and 14 PNG files in
+`output/figures/`. The manuscript uses the seven light-theme figures. Follow
+the pinned render recipe to build the current PDF and HTML.
 
 ## Citation
 

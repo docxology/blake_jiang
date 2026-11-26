@@ -1,4 +1,4 @@
-# AGENTS.md — `manuscript/`
+# AGENTS.md — `docs/manuscript/`
 
 ## Purpose
 
@@ -24,23 +24,24 @@ Sections are processed in lexicographic order; the leading two-digit prefix is t
 | `10_glossary.md` | Glossary of cross-vocabulary terms. | — |
 | `99_references.md` | Pointer to references.bib. | — |
 | `references.bib` | All citations in BibTeX. | — |
+| `preamble.md` | Shared LaTeX packages and environments. | — |
 
 ## Architecture Rules
 
-1. **Cite, don't re-quote.** Every Blake / Jiang / Friedman quotation must trace to an entry in `../src/quotations.py`. Add it there first; reference its content here.
+1. **Cite, don't re-quote.** Every Blake / Jiang / Friedman quotation must trace to an entry in `../../src/quotations.py`. Add it there first; reference its content here.
 2. **Stable BibTeX keys.** Keys in `references.bib` are used by every section's `[@key]` references. Renaming a key is a refactor that touches every section.
-3. **No generated content.** Section files are hand-authored prose. Numerical figures (e.g., precision-regime scores) are written explicitly in prose, not interpolated at build time — but they must match the values produced by `../src/generative_model.py`.
-4. **Plain Markdown.** No JavaScript, no shortcodes, no hidden HTML. Tables use plain pipe-syntax; figures are referenced by relative path to `../output/figures/`.
-5. **Inline metric checking.** If a section quotes a numeric metric (e.g., "fourfold-balance entropy of approximately 0.78 nats"), that number must be reproducible from `src/`; the regression test that demonstrates this lives in `../tests/test_manuscript.py`.
+3. **No generated content.** Section files are hand-authored prose. Numerical figures (e.g., precision-regime scores) are written explicitly in prose, not interpolated at build time — but they must match the values produced by `../../src/generative_model.py`.
+4. **Plain Markdown.** No JavaScript, no shortcodes, no hidden HTML. Tables use plain pipe-syntax; figures are referenced by relative path to `../../output/figures/`.
+5. **Inline metric checking.** If a section quotes a numeric metric (e.g., "fourfold-balance entropy of approximately 0.78 nats"), that number must be reproducible from `src/`; the regression test that demonstrates this lives in `../../tests/test_manuscript.py`.
 
 ## When extending
 
 - Add a new section between `09_conclusion.md` and `99_references.md` (e.g., `08a_appendix.md`) to keep the conclusion (`09_conclusion.md`) followed by glossary/references.
 - New citation: add a BibTeX entry, give it a kebab-case key, and reference it as `[@key]`.
-- New quoted Blake / Jiang / Friedman line: register the `Quotation` in `../src/quotations.py` first.
+- New quoted Blake / Jiang / Friedman line: register the `Quotation` in `../../src/quotations.py` first.
 
 ## Don't
 
 - Don't introduce metrics in the prose that the code can't reproduce.
-- Don't put figures in the manuscript — figures live in `../output/figures/` and are referenced from there at render time.
+- Don't put figures in the manuscript — figures live in `../../output/figures/` and are referenced from there at render time.
 - Don't introduce internal cross-references by section number (e.g., "see §4.3"). Sections must read self-sufficiently; refer to content thematically ("the formal synthesis," "the convergence analysis") rather than by index.

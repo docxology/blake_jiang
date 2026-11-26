@@ -1,5 +1,12 @@
-# `docs/` — Internal Scholarly Notes
+# Blake and Jiang documentation
 
-Optional, versioned notes that elaborate on the project's design but don't belong in the manuscript. See `AGENTS.md` for the conventional file list.
-
-If you find yourself writing the same paragraph in `docs/` and a manuscript section, that paragraph belongs in the manuscript — pull it forward.
+- [Manuscript](manuscript/README.md) for the paper's sections, bibliography,
+  and publication settings.
+- [Development and rendering](development.md) for installing, testing,
+  generating figures, and reproducing the current PDF and HTML.
+- [Methodology](methodology.md) for the scope and limits of the comparison.
+- [Quotation provenance](quotation_provenance.md) for the sources behind the
+  quotation registry.
+- [Version 1 PDF, May 12, 2026](../blake_jiang_DAF_v1_05-12-2026.pdf) for the
+  original published artifact.
+- [Project tasks](TODO.md) for follow-up work.

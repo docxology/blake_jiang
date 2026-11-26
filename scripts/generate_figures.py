@@ -1,38 +1,38 @@
 """Thin orchestrator: render all blake_jiang figures.
 
-Calls every renderer in ``projects.blake_jiang.src.viz`` and writes both
+Calls every renderer in ``src.viz`` and writes both
 light and dark PNG variants to ``output/figures/``.
 """
 
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
 
 os.environ.setdefault("MPLBACKEND", "Agg")
 
+if not __package__:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from infrastructure.core.logging.utils import get_logger  # noqa: E402
-from projects.blake_jiang.src.viz import (  # noqa: E402
-    render_convergence_graph,
-    render_fourfold_model,
-    render_markov_blanket,
-    render_precision_dynamics,
-    render_precision_phase,
-    render_timeline,
-    render_triangulation,
-)
+
+if __package__ and "." in __package__:
+    from ..src import viz
+else:
+    from src import viz
 
 logger = get_logger("blake_jiang.figures")
 
 
 _RENDERERS = {
-    "triangulation": render_triangulation,
-    "convergence_graph": render_convergence_graph,
-    "fourfold_model": render_fourfold_model,
-    "precision_dynamics": render_precision_dynamics,
-    "precision_phase": render_precision_phase,
-    "timeline": render_timeline,
-    "markov_blanket": render_markov_blanket,
+    "triangulation": viz.render_triangulation,
+    "convergence_graph": viz.render_convergence_graph,
+    "fourfold_model": viz.render_fourfold_model,
+    "precision_dynamics": viz.render_precision_dynamics,
+    "precision_phase": viz.render_precision_phase,
+    "timeline": viz.render_timeline,
+    "markov_blanket": viz.render_markov_blanket,
 }
 
 

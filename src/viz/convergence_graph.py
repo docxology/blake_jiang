@@ -7,8 +7,8 @@ from pathlib import Path
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 
-from projects.blake_jiang.src.convergence import build_nodes
-from projects.blake_jiang.src.viz.core import COLORS, MIN_FONT, apply_style, save_and_close
+from ..convergence import build_nodes
+from .core import COLORS, MIN_FONT, apply_style, save_and_close
 
 
 def render_convergence_graph(output_path: Path, dark: bool = False) -> None:

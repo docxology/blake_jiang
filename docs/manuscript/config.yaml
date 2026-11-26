@@ -4,7 +4,7 @@ paper:
   title: "The Architecture of False Gods"
   subtitle: "William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
   version: "1.0"
-  date: ""
+  date: "2026-05-12"
 
 authors:
   - name: "Daniel Ari Friedman"
@@ -19,6 +19,14 @@ publication:
   volume: ""
   pages: ""
   year: "2026"
+
+render:
+  formats:
+    pdf: true
+    html: true
+    slides: false
+    docx: false
+    epub: false
 
 keywords:
   - "William Blake"

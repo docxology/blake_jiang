@@ -18,7 +18,7 @@ Second, it shifts from speculative to *operational*. Bartlett asks Jiang what AI
 
 Third, and most consequentially for the present essay, the May 7 Bartlett interview contains the sentence that anchors the entire mapping: ***"Everything is a hallucination."*** Jiang says this in the context of Plato's Cave, with the gloss that contemporary neuroscience reaches the same conclusion. The line is, in compressed form, the unification of Jiang's two diagnostic vocabularies — *hallucination* as a technical claim about large language models, and *hallucination* as a phenomenological claim about perception itself. That unification is precisely what the Blake / Active Inference apparatus already supplies: the doors of perception as the threshold of prediction, the generative model as constitutive of perceived reality, the closure of the system around its own expectations as the failure mode common to Newton's Sleep and to next-token prediction. The May material gives us Jiang's own bridge from the technical to the phenomenological, in a sentence we can quote and check.
 
-![Chronology of the three vocabularies: Blake (1789–1820), American pragmatism (Peirce 1878, Mead 1925, Dewey 1929), Active Inference (Friston 2005–2022), Jiang's *Predictive History* (2024–2026), and the present synthesis (Zenodo 2026).](../output/figures/timeline_light.png){ width=95% }
+![Chronology of the three vocabularies: Blake (1789–1820), American pragmatism (Peirce 1878, Mead 1925, Dewey 1929), Active Inference (Friston 2005–2022), Jiang's *Predictive History* (2024–2026), and the present synthesis (Zenodo 2026).](../../output/figures/timeline_light.png){ width=95% }
 
 ## The Three Vocabularies
 
@@ -34,7 +34,7 @@ The observation offered: Jiang's May claims about the technate, the AI surveilla
 
 The reception literature on Jiang to date — *The Free Press* [@thefp_jiang], *South China Morning Post* [@scmp_jiang], the TripleAmpersand critique [@tripleampersand_tutt] — engages his geopolitics rather than his AI-and-consciousness commentary. The present essay tries to engage the latter, while acknowledging that doing so on the day of the trigger lecture means working without the reception apparatus that more deliberate scholarship would draw on.
 
-![Triangulating Jiang, Blake, and the Active Inference apparatus around the central diagnostic concern, *Architecture of Intelligence*. The figure is reproduced from `output/figures/triangulation_light.png`.](../output/figures/triangulation_light.png){ width=80% }
+![Triangulating Jiang, Blake, and the Active Inference apparatus around the central diagnostic concern, *Architecture of Intelligence*. The figure is reproduced from `output/figures/triangulation_light.png`.](../../output/figures/triangulation_light.png){ width=80% }
 
 ## What Follows
 
