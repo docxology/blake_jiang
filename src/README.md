@@ -24,7 +24,7 @@ src/
 ## Local sanity check
 
 ```bash
-uv run pytest tests/ -k "quotations or convergence or generative or fourfold" -v
+uv run --extra dev pytest tests/ -k "quotations or convergence or generative or fourfold" -v
 ```
 
 ## Style

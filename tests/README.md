@@ -15,7 +15,7 @@ Zero-mock suite across 8 files (73 test functions on disk as of 2026-10-25); cov
 ## Run it
 
 ```bash
-uv run pytest tests/ --cov=src --cov-fail-under=90
+uv run --extra dev pytest tests/ --cov=src --cov-fail-under=90
 ```
 
 ## Style
