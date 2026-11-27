@@ -28,7 +28,7 @@ Zero-mock test suite for the Blake/Jiang project. Coverage floor: **≥ 90 %** o
 ## Architecture Rules
 
 1. Tests import from `projects.blake_jiang.src.*` and `projects.blake_jiang.scripts.*` exclusively. They never import from sibling projects. The root `conftest.py` maps those names onto the standalone `src/`, `tests/`, and `scripts/` layout.
-2. Every test file is independently runnable: `uv run pytest tests/test_foo.py -v`.
+2. Run individual test files with `uv run --extra dev pytest tests/test_foo.py -v`.
 3. Tests cannot mutate `src/` data — registries and tuples are frozen; if a test would need mutation, the architecture is wrong.
 4. New tests follow `test_<noun>_<assertion>` naming.
 
@@ -36,11 +36,11 @@ Zero-mock test suite for the Blake/Jiang project. Coverage floor: **≥ 90 %** o
 
 ```bash
 # Full suite with coverage
-uv run pytest tests/ --cov=src --cov-report=term-missing --cov-fail-under=90
+uv run --extra dev pytest tests/ --cov=src --cov-report=term-missing --cov-fail-under=90
 
 # Single file
-uv run pytest tests/test_convergence.py -v
+uv run --extra dev pytest tests/test_convergence.py -v
 
 # Single test
-uv run pytest tests/test_quotations.py::test_registry_count_matches_entries -v
+uv run --extra dev pytest tests/test_quotations.py::test_registry_count_matches_entries -v
 ```

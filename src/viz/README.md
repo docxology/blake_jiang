@@ -23,7 +23,7 @@ def render_<name>(output_path: Path, dark: bool = False) -> None
 3. Re-export from `__init__.py`.
 4. Add it to `_RENDERERS` in `../../scripts/generate_figures.py`.
 5. Add it to `_RENDERERS` in `../../tests/test_viz_figures.py`.
-6. Run `uv run pytest tests/test_viz_figures.py -v` to confirm.
+6. From the repository root, run `uv run --extra dev pytest tests/test_viz_figures.py -v` to confirm.
 
 ## Determinism
 

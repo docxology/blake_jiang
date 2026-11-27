@@ -23,5 +23,5 @@ uv run python -m scripts.generate_figures
 ## Test the orchestrators
 
 ```bash
-uv run pytest tests/test_analyze_script.py tests/test_generate_figures_script.py -v
+uv run --extra dev pytest tests/test_analyze_script.py tests/test_generate_figures_script.py -v
 ```
